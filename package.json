@@ -1,0 +1,9 @@
+{
+  "name": "negasa-portfolio-react",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  }
+}

@@ -1,14 +1,8 @@
-# Negasa Teferi Kistana Portfolio
+# Negasa Teferi Kistana React Portfolio
 
-A modern, executive-level portfolio and ATS-friendly CV website for Negasa Teferi Kistana, focused on digital banking product ownership, fintech innovation, mobile banking, internet banking, payments, lending, and API-led product delivery.
+A modern, executive-level React portfolio and ATS-friendly CV website for Negasa Teferi Kistana, focused on digital banking product ownership, fintech innovation, mobile banking, internet banking, payments, lending, and API-led product delivery.
 
-## Deploy on GitHub Pages
-
-1. Push this repository to GitHub.
-2. Open **Settings → Pages**.
-3. Select **Deploy from a branch**.
-4. Choose the current branch and `/ (root)` folder.
-5. Save and open the generated GitHub Pages URL.
+This version uses React components instead of a plain HTML-only page. Visitors open the normal website URL, so they do **not** need to type an `.html` extension.
 
 ## Run in GitHub Codespaces
 
@@ -18,18 +12,25 @@ A modern, executive-level portfolio and ATS-friendly CV website for Negasa Tefer
 4. In the Codespaces terminal, run:
 
 ```bash
-python3 -m http.server 8000
+npm run dev
 ```
 
-5. When GitHub shows the forwarded port notification, click **Open in Browser** or open the **Ports** tab and select the forwarded `8000` port.
+5. When GitHub shows the forwarded port notification, click **Open in Browser**. You can also open the **Ports** tab and select port `8000`.
 6. If prompted, set port visibility to **Public** only when you want to share the preview link with someone else.
 
 ## Local Preview
 
-Open `index.html` directly in a browser, or run a simple local server:
-
 ```bash
-python3 -m http.server 8000
+npm run dev
 ```
 
 Then visit `http://localhost:8000`.
+
+## Install on GitHub Pages
+
+1. Push this repository to GitHub.
+2. Open **Settings → Pages**.
+3. Under **Build and deployment**, select **Deploy from a branch**.
+4. Choose your branch and the `/ (root)` folder.
+5. Save the settings.
+6. Open the generated GitHub Pages URL. The React portfolio opens from the root URL without `/index.html`.
