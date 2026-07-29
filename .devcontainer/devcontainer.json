@@ -1,0 +1,12 @@
+{
+  "name": "Portfolio Website",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Portfolio preview",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "python3 --version"
+}
