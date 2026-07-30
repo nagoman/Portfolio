@@ -37,13 +37,13 @@ const experiences = [
     period: 'December 2023 – Present',
     items: [
       'Develop and manage innovative digital banking products, including mobile banking, internet banking, digital payment solutions, and virtual cards.',
-      'Prepare comprehensive Business Requirements Documents (BRDs) for mobile banking, e-wallets, digital loans, IFB products, and virtual cards.',
+      'Prepare comprehensive Business Requirements Documents (BRDs).',
       'Draft detailed test cases and UAT scenarios to ensure product quality and readiness before launch.',
       'Lead end-to-end product lifecycle management from ideation, design, development, testing, and deployment.',
       'Design and continuously improve digital loan workflows and customer journeys for payday loans, salary advance, merchant loans, e-school payment loans, and microloans.',
       'Implement Sharia-compliant digital products, including e-Murabaha workflows and IFB mobile banking features.',
       'Collaborate with IT, compliance, and business teams to ensure seamless system integration and regulatory adherence.',
-      'Coordinate Telebirr integration and microsavings product initiatives; support QR payment and wallet-related product enhancements.',
+      'Coordinate with thir-party integration and microsavings product initiatives; support QR payment and wallet-related product enhancements.',
       "Drive fintech partnerships to expand the bank's digital service ecosystem.",
       'Lead KYC automation and digital onboarding process improvement efforts.',
       'Contribute to MSME, agricultural digital banking, remittance, and virtual card product development.',
@@ -78,9 +78,9 @@ const experiences = [
 
 const productFocus = [
   { icon: '📱', title: 'Mobile & Internet Banking', text: 'Customer-facing digital channels, account services, authentication, bill payments, wallets, and transaction journeys.' },
-  { icon: '💳', title: 'Digital Loans & Virtual Cards', text: 'Payday loans, salary advance, merchant loans, MSME lending, e-school payment loans, microloans, and virtual card concepts.' },
+  { icon: '💳', title: 'Digital Loans &  Cards', text: 'Payday loans, salary advance, merchant loans, MSME lending, e-school payment loans, microloans, and virtual card concepts.' },
   { icon: '☪️', title: 'Interest-Free Banking', text: 'IFB/Sharia-compliant product flows, e-Murabaha workflows, and Islamic digital banking service design.' },
-  { icon: '🔗', title: 'Fintech Integrations', text: 'Telebirr, QR payments, wallet integrations, partner APIs, payment ecosystem enhancements, and microsavings initiatives.' },
+  { icon: '🔗', title: 'Fintech Integrations', text: 'Third party Integration workflow, QR payments, wallet integrations, payment ecosystem enhancements, and microsavings initiatives.' },
   { icon: '🧾', title: 'Business Analysis', text: 'BRDs, product requirements, process mapping, UAT test cases, stakeholder alignment, and regulatory readiness.' },
   { icon: '🛡️', title: 'Risk, KYC & Security', text: 'Digital onboarding automation, KYC improvements, fraud prevention awareness, compliance monitoring, and cybersecurity fundamentals.' },
 ];
@@ -136,7 +136,7 @@ function App() {
 
         <section className="cover page-section">
           <div className="cover-copy">
-            <p className="eyebrow">Executive Digital Banking CV Portfolio</p>
+            <p className="eyebrow">Executive Portfolio</p>
             <h1>{contact.name}</h1>
             <h2>{contact.title}</h2>
             <p className="lead">5 years of progressive banking experience across digital product development, product ownership, business analysis, fintech integrations, and customer-centric digital transformation.</p>
@@ -168,14 +168,14 @@ function App() {
           <div className="objective-card">
             <span className="panel-icon" aria-hidden="true">🎯</span>
             <h3>Target Roles</h3>
-            <p>Digital Product Development Specialist, Product Owner, Product Manager, Business Analyst, Digital Banking Product Manager, and FinTech Product Lead.</p>
+            <p>Digital Product Development Specialist, Product Owner, Product Manager, Business Analyst, Digital Banking Product Management, and FinTech Product Lead.</p>
           </div>
         </section>
 
         <section className="page-section summary-strip" aria-label="Career highlights">
           <article><span className="summary-icon" aria-hidden="true">5+</span><strong>Years Experience</strong><span>Progressive digital banking and customer service experience.</span></article>
           <article><span className="summary-icon" aria-hidden="true">BRD</span><strong>Business Analysis</strong><span>Requirements, UAT test cases, process flows, and launch readiness.</span></article>
-          <article><span className="summary-icon" aria-hidden="true">API</span><strong>Digital Integration</strong><span>Wallets, QR payments, fintech partners, and system integration.</span></article>
+          <article><span className="summary-icon" aria-hidden="true">PM</span><strong>Product Management</strong><span>The discipline of identifying customer needs, defining product strategy, prioritizing features, and leading cross-functional teams to deliver successful products that create business and customer value.</span></article>
         </section>
 
         <section className="page-section" id="experience">
@@ -243,9 +243,8 @@ function App() {
           </div>
           <div className="framework-card">
             <span className="panel-icon" aria-hidden="true">🤝</span>
-            <h3>Reference</h3>
-            <p><strong>Mikiyasa Adefris</strong><br />Manager, Digital Product Development Division</p>
-            <p><a href="tel:0913153900">0913153900</a></p>
+            <h3>Awash Bank</h3>
+            
           </div>
         </section>
 
