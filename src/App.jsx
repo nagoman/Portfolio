@@ -126,11 +126,11 @@ function App() {
         <nav className="nav" aria-label="Main navigation">
           <a className="brand" href="#top">NTK</a>
           <div className="nav-links">
-            <a href="#summary">Summary</a>
-            <a href="#experience">Experience</a>
-            <a href="#products">Products</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#summary"><span aria-hidden="true">📌</span> Summary</a>
+            <a href="#experience"><span aria-hidden="true">💼</span> Experience</a>
+            <a href="#products"><span aria-hidden="true">🚀</span> Products</a>
+            <a href="#skills"><span aria-hidden="true">🧠</span> Skills</a>
+            <a href="#contact"><span aria-hidden="true">☎️</span> Contact</a>
           </div>
         </nav>
 
