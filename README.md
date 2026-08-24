@@ -2,7 +2,7 @@
 
 A modern, executive-level React portfolio and ATS-friendly CV website for Negasa Teferi Kistana, focused on digital banking product ownership, fintech innovation, mobile banking, internet banking, payments, lending, and API-led product delivery.
 
-This version uses React components loaded in the browser, so a Node/npm build step is not required. Visitors open the normal website URL, so they do **not** need to type an `.html` extension.
+This version uses React components loaded in the browser, so it has no package dependencies and no build step. A small Node.js preview server is included for `npm run dev`; visitors open the normal website URL and do **not** need to type an `.html` extension.
 
 ## Run in GitHub Codespaces
 
@@ -12,19 +12,19 @@ This version uses React components loaded in the browser, so a Node/npm build st
 4. In the Codespaces terminal, run one of these commands:
 
 ```bash
-./run.sh
+npm run dev
 ```
 
-or:
+This works immediately—**do not run `npm install`** because the portfolio has no npm dependencies. You can still use the fallback server script:
 
 ```bash
-python3 -m http.server 8000
+./run.sh
 ```
 
 5. When GitHub shows the forwarded port notification, click **Open in Browser**. You can also open the **Ports** tab and select port `8000`.
 6. If prompted, set port visibility to **Public** only when you want to share the preview link with someone else.
 
-> If you see `bash: npm: command not found`, that is okay. This project does not need npm. Use `./run.sh` instead.
+> If you see `bash: npm: command not found`, use `./run.sh` instead. The script uses Python, Node.js, or PHP when one is available.
 >
 > If you see `python3: command not found`, your Codespace image is missing Python. Run:
 >
@@ -39,10 +39,10 @@ python3 -m http.server 8000
 ## Local Preview
 
 ```bash
-./run.sh
+npm run dev
 ```
 
-Then visit `http://localhost:8000`.
+Then visit `http://localhost:8000`. To stop the preview server, press `Ctrl+C`. If npm is unavailable, run `./run.sh` instead.
 
 ## Install on GitHub Pages
 
