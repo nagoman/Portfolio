@@ -81,7 +81,7 @@ const productFocus = [
   { icon: '📱', title: 'Mobile & Internet Banking', text: 'Customer-facing digital channels, account services, authentication, bill payments, wallets, and transaction journeys.' },
   { icon: '💳', title: 'Digital Loans & Virtual Cards', text: 'Payday loans, salary advance, merchant loans, MSME lending, e-school payment loans, microloans, and virtual card concepts.' },
   { icon: '☪️', title: 'Interest-Free Banking', text: 'IFB/Sharia-compliant product flows, e-Murabaha workflows, and Islamic digital banking service design.' },
-  { icon: '🔗', title: 'Fintech Integrations', text: 'Telebirr, QR payments, wallet integrations, partner APIs, payment ecosystem enhancements, and microsavings initiatives.' },
+  { icon: '🔗', title: 'API-Driven Digital Innovation', text: 'Own API-led product delivery for wallet, QR-payment, fintech-partner, and core-banking integrations—from discovery and BRDs through user stories, backlog priorities, UAT, launch, and continuous improvement.' },
   { icon: '🧾', title: 'Business Analysis', text: 'BRDs, product requirements, process mapping, UAT test cases, stakeholder alignment, and regulatory readiness.' },
   { icon: '🛡️', title: 'Risk, KYC & Security', text: 'Digital onboarding automation, KYC improvements, fraud prevention awareness, compliance monitoring, and cybersecurity fundamentals.' },
 ];
@@ -210,7 +210,7 @@ function App() {
         <section className="page-section summary-strip" aria-label="Career highlights">
           <article><span className="summary-icon" aria-hidden="true">5+</span><strong>Years Experience</strong><span>Progressive digital banking and customer service experience.</span></article>
           <article><span className="summary-icon" aria-hidden="true">BRD</span><strong>Business Analysis</strong><span>Requirements, UAT test cases, process flows, and launch readiness.</span></article>
-          <article><span className="summary-icon" aria-hidden="true">API</span><strong>Digital Integration</strong><span>Wallets, QR payments, fintech partners, and system integration.</span></article>
+          <article><span className="summary-icon" aria-hidden="true">API</span><strong>Product Management & API Innovation</strong><span>Translate customer, business, and compliance needs into BRDs, user stories, integration requirements, UAT, and scalable wallet, QR-payment, fintech-partner, and core-banking products.</span></article>
         </section>
 
         <section className="page-section" id="experience">
