@@ -2,53 +2,21 @@
 
 A modern, executive-level React portfolio and ATS-friendly CV website for Negasa Teferi Kistana, focused on digital banking product ownership, fintech innovation, mobile banking, internet banking, payments, lending, and API-led product delivery.
 
-This version uses React components loaded in the browser, so it has no package dependencies and no build step. A small Node.js preview server is included for `npm run dev`; visitors open the normal website URL and do **not** need to type an `.html` extension.
+This version uses React components loaded in the browser, so it has no package dependencies, build step, or backend server. The contact form opens the visitor's email application using the displayed contact address.
 
-## Run in GitHub Codespaces
+## Deploy static files with GitHub Pages
 
-1. Open this repository on GitHub.
-2. Click **Code → Codespaces → Create codespace on current branch**.
-3. Wait for Codespaces to finish opening the workspace.
-4. In the Codespaces terminal, run one of these commands:
+The repository includes a GitHub Actions workflow that publishes the static site whenever the Codespaces branch `codex/create-and-deploy-digital-portfolio-website-djty05` changes.
 
-```bash
-npm run dev
-```
+1. Commit and push this Codespaces branch to GitHub.
+2. Open the repository's **Settings → Pages** and set **Source** to **GitHub Actions**.
+3. Open the **Actions** tab and wait for **Deploy portfolio to GitHub Pages** to complete.
+4. Open the project site at `https://nagoman.github.io/Portfolio/`.
 
-This works immediately—**do not run `npm install`** because the portfolio has no npm dependencies. You can still use the fallback server script:
+The complete static portfolio, including the footer and contact form, is published by the workflow. This is a project site, so `https://nagoman.github.io/` is a separate user-site URL and will not display this repository.
 
-```bash
-./run.sh
-```
+### Custom domain troubleshooting
 
-5. When GitHub shows the forwarded port notification, click **Open in Browser**. You can also open the **Ports** tab and select port `8000`.
-6. If prompted, set port visibility to **Public** only when you want to share the preview link with someone else.
+The **Custom domain** field must contain a complete domain that you own, such as `nagoportfoliocv.com` or `www.nagoportfoliocv.com`. `nagoportfoliocv` by itself is not valid. If you do not own a domain yet, leave the field empty and use the generated URL: `https://nagoman.github.io/Portfolio/`.
 
-> If you see `bash: npm: command not found`, use `./run.sh` instead. The script uses Python, Node.js, or PHP when one is available.
->
-> If you see `python3: command not found`, your Codespace image is missing Python. Run:
->
-> ```bash
-> sudo apt-get update
-> sudo apt-get install -y python3
-> ./run.sh
-> ```
->
-> Do not run `install python3`; that is a different Linux command and needs a destination file.
-
-## Local Preview
-
-```bash
-npm run dev
-```
-
-Then visit `http://localhost:8000`. To stop the preview server, press `Ctrl+C`. If npm is unavailable, run `./run.sh` instead.
-
-## Install on GitHub Pages
-
-1. Push this repository to GitHub.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose your branch and the `/ (root)` folder.
-5. Save the settings.
-6. Open the generated GitHub Pages URL. The React portfolio opens from the root URL without `/index.html`.
+For a custom domain, add the DNS records required by your domain provider before saving the Pages setting. Use a `CNAME` record from `www` to `nagoman.github.io`, or use the apex-domain `A` records listed in GitHub's [custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).

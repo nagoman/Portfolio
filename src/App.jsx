@@ -1,7 +1,7 @@
 const contact = {
   name: 'Negasa Teferi Kistana',
   title: 'Digital Product Development Officer | Product Owner | Business Analyst',
-  subtitle: 'Digital Banking Products Development Officer',
+  subtitle: 'Digital Products Development Officer',
   location: 'Addis Ababa, Ethiopia',
   phone: '+251919275013',
   email: 'nagasatafari2009@gmail.com',
@@ -307,8 +307,61 @@ function App() {
             <a href={`https://${contact.linkedin}`} target="_blank" rel="noreferrer"><span>🔗</span>{contact.linkedin}</a>
             <span><span>📍</span>{contact.location}</span>
           </div>
+          <div className="contact-form-card">
+            <div className="contact-form-intro">
+              <span className="form-mark" aria-hidden="true">✦</span>
+              <p className="eyebrow">Start a conversation</p>
+              <h3>Let’s build something useful.</h3>
+              <p>Share a little context and Negasa will have the right starting point for your opportunity, product challenge, or collaboration.</p>
+              <div className="form-assurance"><span aria-hidden="true">✓</span><span>Professional, focused, and confidential.</span></div>
+            </div>
+            <form className="contact-form" action={`mailto:${contact.email}`} method="post" encType="text/plain">
+              <div className="form-field-grid">
+                <label>Full name <span aria-hidden="true">*</span><input name="name" type="text" autoComplete="name" placeholder="Your full name" required /></label>
+                <label>Email address <span aria-hidden="true">*</span><input name="email" type="email" autoComplete="email" placeholder="you@company.com" required /></label>
+                <label>Phone number <small>Optional</small><input name="phone" type="tel" autoComplete="tel" placeholder="+251 ..." /></label>
+                <label>Organization <small>Optional</small><input name="organization" type="text" autoComplete="organization" placeholder="Company or institution" /></label>
+                <label>How can I help? <span aria-hidden="true">*</span><select name="inquiryType" defaultValue="" required><option value="" disabled>Select an inquiry type</option><option>Product opportunity</option><option>Business analysis support</option><option>Digital banking consultation</option><option>Career opportunity</option><option>Speaking or collaboration</option><option>Other</option></select></label>
+                <label>Preferred contact <span aria-hidden="true">*</span><select name="preferredContact" defaultValue="Email" required><option>Email</option><option>Phone call</option><option>LinkedIn message</option></select></label>
+                <label>Ideal timeline <span aria-hidden="true">*</span><select name="timeline" defaultValue="" required><option value="" disabled>Choose a timeframe</option><option>As soon as possible</option><option>Within 1 month</option><option>Within 3 months</option><option>Just exploring</option></select></label>
+                <label>Subject <span aria-hidden="true">*</span><input name="subject" type="text" placeholder="What would you like to discuss?" required /></label>
+              </div>
+              <label>Message <span aria-hidden="true">*</span><textarea name="message" rows="6" placeholder="Tell me about your goals, challenge, or opportunity..." required /></label>
+              <div className="form-submit-row"><p className="form-status" role="status"><span aria-hidden="true">↗</span> Your email app will open with this inquiry.</p><button className="button primary" type="submit">Send inquiry <span aria-hidden="true">→</span></button></div>
+            </form>
+          </div>
         </section>
       </main>
+
+      <footer className="site-footer">
+        <div className="footer-inner">
+          <div className="footer-intro">
+            <div>
+              <p className="footer-kicker">Digital products. Human outcomes.</p>
+              <p className="footer-name">Negasa Teferi Kistana</p>
+              <p className="footer-note">Product ownership, business analysis, and digital banking delivery.</p>
+            </div>
+          </div>
+          <div className="footer-links" aria-label="Footer navigation">
+            <p>Explore</p>
+            <a href="#summary">Summary</a>
+            <a href="#experience">Experience</a>
+            <a href="#products">Products</a>
+            <a href="#skills">Capabilities</a>
+          </div>
+          <div className="footer-links">
+            <p>Connect</p>
+            <a href={`mailto:${contact.email}`}>Email Negasa</a>
+            <a href={`https://${contact.linkedin}`} target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="#contact">Start a conversation</a>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <span>© {new Date().getFullYear()} Negasa Teferi Kistana</span>
+          <span className="footer-status"><i aria-hidden="true" /> Open to meaningful digital product opportunities</span>
+          <a className="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+      </footer>
     </div>
   );
 }
