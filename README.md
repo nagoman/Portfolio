@@ -34,11 +34,3 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Install on GitHub Pages
-
-1. Push this repository to GitHub.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose your branch and the `/ (root)` folder.
-5. Save the settings.
-6. Open the generated GitHub Pages URL. The React portfolio opens from the root URL without `/index.html`.
