@@ -1,4 +1,4 @@
-# Negasa Teferi Kistana React Portfolio
+# Negasa Teferi Kistana Portfolio
 
 A modern, executive-level React portfolio and ATS-friendly CV website for Negasa Teferi Kistana, focused on digital banking product ownership, fintech innovation, mobile banking, internet banking, payments, lending, and API-led product delivery.
 
