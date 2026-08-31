@@ -3,7 +3,7 @@ name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches:
-      - codex/create-and-deploy-digital-portfolio-website-djty05
+      - nagoprotfolio
   workflow_dispatch:
 
 permissions:
